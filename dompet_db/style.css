@@ -1,0 +1,146 @@
+/* 1. Reset Dasar */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #ffffff; /* Ganti jadi putih bersih */
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+/* 2. Container Full Width */
+.container {
+    width: 100%;           /* Lebar 100% layar */
+    max-width: 100%;       /* Hapus batasan lebar lama */
+    margin: 0;             /* Hapus margin auto */
+    padding: 40px 50px;    /* Jarak isi dari pinggir layar (Atas/Bawah Kiri/Kanan) */
+    box-sizing: border-box;/* Supaya padding tidak bikin scroll samping */
+    min-height: 100vh;     /* Tinggi minimal setinggi layar monitor */
+    
+    /* Hapus efek kartu */
+    border-radius: 0;
+    box-shadow: none;
+}
+
+/* Judul & Header */
+h2 {
+    color: #2c3e50;
+    margin-top: 0;
+    font-size: 2em;
+}
+
+center {
+    text-align: left;      /* Dashboard biasanya rata kiri, tapi kalau mau tengah hapus baris ini */
+    margin-bottom: 30px;
+}
+
+/* 3. Saldo Box (Kita bikin lebih lebar tapi gak full banget biar enak dilihat) */
+.saldo-box {
+    background: linear-gradient(135deg, #1e3c72, #2a5298); /* Biru lebih elegan */
+    color: white; 
+    padding: 30px; 
+    border-radius: 12px; 
+    margin-bottom: 40px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+.saldo-box h1 { margin: 10px 0 0 0; font-size: 3em; }
+
+/* 4. Form Styling (Biar inputnya sejajar rapi memanjang) */
+form { 
+    display: flex; 
+    gap: 15px; 
+    margin-bottom: 20px; 
+    background: #f8f9fa; /* Kasih background tipis di area form */
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid #eee;
+}
+
+input, select { 
+    padding: 15px; 
+    border: 1px solid #ddd; 
+    border-radius: 6px; 
+    font-size: 1em;
+    flex: 1; /* Biar semua kolom lebarnya imbang */
+}
+
+/* Tombol */
+button { 
+    padding: 15px 30px; 
+    border: none; 
+    border-radius: 6px; 
+    cursor: pointer; 
+    color: white; 
+    font-weight: bold; 
+    font-size: 1em;
+    transition: 0.2s;
+}
+
+.btn-simpan { background-color: #3498db; flex: 0 0 100px; /* Lebar tombol fix */ }
+.btn-simpan:hover { background-color: #2980b9; }
+
+.btn-python { background-color: #27ae60; width: auto; display: inline-block;}
+.btn-python:hover { background-color: #219150; }
+
+/* 5. Tabel Full Width */
+#keyword { 
+    width: 100%; 
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    margin: 0 0 20px 0;
+    box-sizing: border-box;
+}
+
+table { 
+    width: 100%; 
+    border-collapse: collapse; 
+    background: white;
+    border: 1px solid #eee; /* Garis tipis pembungkus tabel */
+}
+
+thead {
+    background-color: #2c3e50;
+    color: white;
+}
+
+th, td { 
+    padding: 15px 20px; 
+    text-align: left; 
+    border-bottom: 1px solid #eee; 
+}
+
+tr:hover { background-color: #f1f2f6; }
+
+/* Badge & Tombol Kecil */
+.badge { padding: 6px 12px; border-radius: 20px; font-size: 0.85em; color: white; font-weight: bold; }
+.badge-masuk { background-color: #27ae60; }
+.badge-keluar { background-color: #e74c3c; }
+.btn-hapus { background-color: #e74c3c; padding: 8px 15px; text-decoration: none; color: white; border-radius: 5px; font-size: 0.9em; }
+
+/* ... CSS yang lama ... */
+
+/* Update bagian tombol aksi */
+.btn-aksi {
+    display: inline-block;
+    padding: 8px 12px;
+    margin-right: 5px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    font-size: 0.9em;
+    transition: 0.2s;
+}
+
+.btn-edit {
+    background-color: #f39c12; /* Oranye */
+}
+.btn-edit:hover {
+    background-color: #d35400;
+}
+
+/* Pastikan kolom aksi gak turun baris */
+td:last-child {
+    white-space: nowrap;
+    width: 1%;
+}
