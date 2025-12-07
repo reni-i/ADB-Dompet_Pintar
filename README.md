@@ -21,12 +21,12 @@ Dibangun dengan pendekatan **Database-Centric Logic** menggunakan
 
 | Dashboard | Edit & Koreksi |
 |:---:|:---:|
-| <img src="dashboard.png" width="100%"> | <img src="edit.png" width="100%"> |
+| <img src="dompet_db/dashboard.png" width="100%"> | <img src="dompet_db/edit.png" width="100%"> |
 | *Saldo realtime & statistik ringkas* | *Koreksi saldo otomatis saat transaksi diubah* |
 
 | Pencarian Live | Export Laporan |
 |:---:|:---:|
-| <img src="cari.png" width="100%"> | <img src="report.png" width="100%"> |
+| <img src="dompet_db/cari.png" width="100%"> | <img src="dompet_db/report.png" width="100%"> |
 | *Search tanpa reload (AJAX)* | *Python sebagai worker laporan* |
 
 ---
